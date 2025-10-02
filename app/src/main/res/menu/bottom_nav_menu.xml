@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/portalFragment"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="Portal" />
+    <item
+        android:id="@+id/estudiantesFragment"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Estudiantes" />
+    <item
+        android:id="@+id/materiasFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Materias" />
+    <item
+        android:id="@+id/inscripcionesFragment"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Inscripciones" />
+    <item
+        android:id="@+id/calificacionesFragment"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Calificaciones" />
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/portalFragment">
+
+    <fragment
+        android:id="@+id/portalFragment"
+        android:name="com.roque.examenprogramacionii.ui.PortalFragment"
+        android:label="Portal Principal"
+        tools:layout="@layout/fragment_portal" />
+
+    <fragment
+        android:id="@+id/estudiantesFragment"
+        android:name="com.roque.examenprogramacionii.ui.EstudiantesFragment"
+        android:label="Lista de Estudiantes"
+        tools:layout="@layout/fragment_estudiantes">
+        <action
+            android:id="@+id/action_estudiantesFragment_to_addEditEstudianteFragment"
+            app:destination="@id/addEditEstudianteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/materiasFragment"
+        android:name="com.roque.examenprogramacionii.ui.MateriasFragment"
+        android:label="Lista de Materias"
+        tools:layout="@layout/fragment_materias" />
+
+    <fragment
+        android:id="@+id/inscripcionesFragment"
+        android:name="com.roque.examenprogramacionii.ui.InscripcionesFragment"
+        android:label="Inscripciones"
+        tools:layout="@layout/fragment_inscripciones" />
+
+    <fragment
+        android:id="@+id/calificacionesFragment"
+        android:name="com.roque.examenprogramacionii.ui.CalificacionesFragment"
+        android:label="Calificaciones"
+        tools:layout="@layout/fragment_calificaciones" />
+
+    <fragment
+        android:id="@+id/addEditEstudianteFragment"
+        android:name="com.roque.examenprogramacionii.ui.AddEditEstudianteFragment"
+        android:label="Añadir/Editar Estudiante"
+        tools:layout="@layout/fragment_add_edit_estudiante" >
+        <argument
+            android:name="estudiante_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>
